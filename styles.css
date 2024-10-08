@@ -2,59 +2,54 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 25px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 h1, h2 {
     text-align: center;
-    color: #333;
+    color: #333333;
 }
 
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    border: 1px solid #ccc;
+    padding: 12px 15px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 button {
     width: 100%;
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 14px 20px;
+    margin: 8px 0 10px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
-}
-
-#merchantSection {
-    display: none; /* Ocultar sección de comerciantes por defecto */
-}
-
-.owner-only {
-    display: none; /* Ocultar elementos solo para el propietario por defecto */
 }
 
 .list {
@@ -64,14 +59,19 @@ button:hover {
 
 .list li {
     background-color: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
+    margin: 6px 0;
+    padding: 12px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    word-break: break-all;
+}
+
+.owner-only {
+    display: none; /* Ocultar secciones solo para el propietario */
 }
 
 .alert {
-    padding: 10px;
+    padding: 12px;
     background-color: #f44336; /* Rojo */
     color: white;
     margin-bottom: 15px;
@@ -79,26 +79,52 @@ button:hover {
 }
 
 .success {
-    padding: 10px;
+    padding: 12px;
     background-color: #4CAF50; /* Verde */
     color: white;
     margin-bottom: 15px;
     border-radius: 4px;
 }
 
+/* Estilos para mostrar alertas */
+#notificationContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+
+.notification.success {
+    background-color: #4CAF50;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+
 /* Responsividad */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 20px 15px;
     }
 
     button {
-        padding: 10px;
+        padding: 12px 18px;
         font-size: 14px;
     }
 
     input[type="text"], input[type="number"] {
-        padding: 8px;
+        padding: 10px 12px;
         font-size: 14px;
     }
 }
