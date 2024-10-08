@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tokenización de Depósitos Bancarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluir TronWeb desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tronweb@3.2.4/dist/TronWeb.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tokenización de Depósitos Bancarios</h1>
+        
+        <!-- Conexión de Cartera -->
+        <div class="section">
+            <h2>Conectar Cartera Tron</h2>
+            <button id="connectWallet">Conectar Cartera</button>
+            <p id="walletAddress">Dirección: N/A</p>
+        </div>
+        
+        <!-- Saldo de BKT -->
+        <div class="section">
+            <h2>Saldo de BKT</h2>
+            <p id="balance">Saldo: N/A BKT</p>
+        </div>
+        
+        <!-- Realizar Depósito -->
+        <div class="section">
+            <h2>Realizar Depósito</h2>
+            <input type="number" id="depositAmount" placeholder="Monto en BKT">
+            <button id="depositButton">Depositar</button>
+        </div>
+        
+        <!-- Retirar Depósito -->
+        <div class="section">
+            <h2>Retirar Depósito</h2>
+            <button id="withdrawButton">Retirar</button>
+        </div>
+        
+        <!-- Registro de Comerciantes (Solo Propietario) -->
+        <div class="section owner-only" id="merchantSection">
+            <h2>Registrar Comerciante</h2>
+            <input type="text" id="merchantAddress" placeholder="Dirección del Comerciante">
+            <button id="registerMerchantButton">Registrar Comerciante</button>
+            <button id="unregisterMerchantButton">Desregistrar Comerciante</button>
+        </div>
+        
+        <!-- Listado de Comerciantes -->
+        <div class="section">
+            <h2>Comerciantes Registrados</h2>
+            <ul id="merchantList" class="list">
+                <!-- Lista de comerciantes se llenará aquí -->
+            </ul>
+        </div>
+        
+        <!-- Realizar Pago -->
+        <div class="section">
+            <h2>Realizar Pago</h2>
+            <input type="text" id="paymentMerchantAddress" placeholder="Dirección del Comerciante">
+            <input type="number" id="paymentAmount" placeholder="Monto en BKT">
+            <button id="paymentButton">Pagar</button>
+        </div>
+        
+        <!-- Historial de Transacciones -->
+        <div class="section">
+            <h2>Historial de Transacciones</h2>
+            <ul id="transactionList" class="list">
+                <!-- Historial de transacciones se llenará aquí -->
+            </ul>
+        </div>
+        
+        <!-- Notificaciones -->
+        <div id="notificationContainer"></div>
+    </div>
+</body>
+</html>

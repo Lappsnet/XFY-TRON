@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.0e36fba0.mod"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "annualInterestRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "depositTimestamps",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "distributeInterest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "recordDeposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract DepositToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/InterestManager.sol": "InterestManager"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/DepositToken.sol": {
+			"keccak256": "0xdffff2fb694b58ffe34ba1a91f46ddfbb17cfbed2133ca3686559328e82a9a0d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://65ec6b3e2930a79b26fab45793fef97ee8dd89ab1a8ffdf68ff92ede72674d23",
+				"dweb:/ipfs/QmVCogay6dJYuXtutANRZAob3gbGQkHUgYqRKyyWCNDwkT"
+			]
+		},
+		"Contracts/InterestManager.sol": {
+			"keccak256": "0x29899aab36bc254140e71350d46e8f1b9513d54c5b50c3f255aecfa07b1e4a9e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9ff05b5aa1eb7deb23e7d3783569118aab25b3e8fbc090a5ea9210947e78ae1",
+				"dweb:/ipfs/Qmb1TXMN2GvRGoTVLrTjBRMxEgGTkGv2BonPGw7EGjmHGW"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.0e36fba0.mod"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"paused()": {
+					"returns": {
+						"_0": "bool True si está pausado, de lo contrario false"
+					}
+				}
+			},
+			"title": "Pausable - Permite pausar y reanudar funciones críticas",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"pause()": {
+					"notice": "Pausa las operaciones críticas"
+				},
+				"paused()": {
+					"notice": "Verifica si el contrato está pausado"
+				},
+				"unpause()": {
+					"notice": "Reanuda las operaciones críticas"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/Pausable.sol": "Pausable"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/Pausable.sol": {
+			"keccak256": "0x3418ad021124e5bad3ca98a31a15dbf06c26dc0559edccf6645b16706b64fe99",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c22f6986c4791a962a1086c5c828e4f1b797d6781f6108390e33d3b5e31464ec",
+				"dweb:/ipfs/QmfRe47fcfqM8jgtX7fTuB8GbErv7aXn8BfRNKPUowTJzg"
+			]
+		}
+	},
+	"version": 1
+}

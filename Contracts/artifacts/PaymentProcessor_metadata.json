@@ -1,0 +1,206 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.0e36fba0.mod"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "merchant",
+						"type": "address"
+					}
+				],
+				"name": "MerchantRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "merchant",
+						"type": "address"
+					}
+				],
+				"name": "MerchantUnregistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "PaymentMade",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "merchant",
+						"type": "address"
+					}
+				],
+				"name": "isMerchant",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "merchant",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "makePayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "merchant",
+						"type": "address"
+					}
+				],
+				"name": "registerMerchant",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract MintToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "merchant",
+						"type": "address"
+					}
+				],
+				"name": "unregisterMerchant",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "PaymentProcessor - Facilita pagos entre usuarios y comerciantes utilizando DUSD",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/DepositManager.sol": "PaymentProcessor"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/DepositManager.sol": {
+			"keccak256": "0x3e603505def02d4f4a640d32d47e8476f1774ce6699a90080bd8bb0138787311",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9756997c4bd23f01afa62455fee95a1f1cc9abd947b6f326259bce26cab933a2",
+				"dweb:/ipfs/QmdvmAvC4a1ArV7nPkgqHW59L9EGeLvf53Evekvsit4FKt"
+			]
+		},
+		"Contracts/MintToken.sol": {
+			"keccak256": "0xe148b87f2ed95caee00b63e9076008ac3412c4fb73e5f94b040e7a280f4f1af0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4bb8dfb2131b36a1f841063a5d1de99a245c340e43d21dd73cfa7a9ff6c59547",
+				"dweb:/ipfs/QmWDMohraKWSsMY132fnGXhfqhACEMcSBBhoa3soD5pwHq"
+			]
+		}
+	},
+	"version": 1
+}
